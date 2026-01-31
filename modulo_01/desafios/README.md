@@ -1,0 +1,1 @@
+Todos os desafios desenvolvidos aqui foram retirados do GitHub de Gustavo Guanabara - html-css disponível no link a seguir: https://github.com/gustavoguanabara/html-css/tree/master/desafios/modulo-01
