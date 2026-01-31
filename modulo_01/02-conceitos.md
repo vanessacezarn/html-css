@@ -3,7 +3,7 @@
 * linguagem fundamental para estruturar o conteúdo de páginas da web
 * baseada em marcações chamadas **tags**
   * tem que ter abertura de tag, conteúdo e fechamento de tag 
-		* exemplo: <h1> TITULO DO SITE </h1> 
+		* exemplo: < h1> TITULO DO SITE < /h1> 
 		* atalho no vscode para colocar um parágrafo já digitado dentro de uma tag --> selecionar o texto --> ctrl+shift+P --> Wrap --> Emment: Wrap with abbreviation--> digitar a tag que deseja --> enter
 * estrutura básica do html
 
@@ -22,19 +22,19 @@
 	</body>
 </ html>
 ```
-* <head> = cabeça da página --> onde ocorre configurações iniciais como formato, estilo, ícone de favoritos, ...
+* < head> = cabeça da página --> onde ocorre configurações iniciais como formato, estilo, ícone de favoritos, ...
 	* < meta charset="UTF-8"> --> fornece suporte para caracteres acentuados
-	* <meta name= "viewport" content="width=decive-width, initial-sacle=1.0"> -->indica que o conteúdo aparecerá em em todo espaço disponível da tela com uma escala 1:1
-	* <title> --> titulo da página, que aparece como identificação da aba do navegador
-* <body> = corpo da página --> o que vai aparecer na tela --> conteúdo do site
+	* < meta name= "viewport" content="width=decive-width, initial-sacle=1.0"> -->indica que o conteúdo aparecerá em em todo espaço disponível da tela com uma escala 1:1
+	* < title> --> titulo da página, que aparece como identificação da aba do navegador
+* < body> = corpo da página --> o que vai aparecer na tela --> conteúdo do site
 
 * Hierarquia de títulos (headings)
 	* possuem 6 níveis de hierarquia --> tags de h1 até h6
 
 * Semântica
-	* negrito --> <strong>
-	* italico --> <em>
-	* texto marcado --> <mark>
+	* negrito --> < strong>
+	* italico --> < em>
+	* texto marcado --> < mark>
 	* cuidado algumas tags podem se tornar obsoletas
 
 ## CSS - Cascading Style Sheets
@@ -50,6 +50,7 @@
     color:blue;
      }
 ```
+
 ## JavaScript 
 * linguagem de programação utilizada principalmente em desenvolvimento web
 * interatividade --> menu, animações, validações
