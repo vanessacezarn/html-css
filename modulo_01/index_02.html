@@ -14,5 +14,20 @@
     <h2>Link para download</h2>
     <p>Para você permitir dowload de arquivos do site </p>
     <a href="pdf_dowload/links.pdf" download="links.pdf" type="application/pdf">Baixar pdf da aula sobre links</a>
+
+    <hr>
+    <h2>Imagens Flexíveis</h2>
+    <p>
+        São imagens que adaptam ao tamanho da tela do navegador, agora além da tag &lt;img&gt; tem temos que usar no inicio a tag &lt;picutre&gt; e a tag &lt;source&gt;. 
+        <br>
+        Dentro de &lt;source&gt; temos 3 atributos <q>type</q> que indica o media type da image,<q>srcset</q> que configura o nome da imagem que será carregada quando o tamanho for atingindo e <q>media</q> indica o tamanho máximo a ser considerado para carregar a imagem indicada em  <q>srcset</q>
+        <br>
+        Para testar temos 3 imagens uma de cada tamanho, então dependo do tamanho que estiver o navegador vai abrir uma imagem diferente.
+    </p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/imagemPequena.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="imagens/imagemMedia.png" type="image/png">
+        <img src="imagens/imagemGrande.png" alt="Imagem fexível">
+    </picture>
 </body>
 </html>
