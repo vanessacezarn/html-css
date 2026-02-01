@@ -29,5 +29,44 @@
         <source media="(max-width:1000px )" srcset="imagens/imagemMedia.png" type="image/png">
         <img src="imagens/imagemGrande.png" alt="Imagem fexível">
     </picture>
+
+    <hr>
+    <h2>Áudios dentro do site</h2>
+    <p>
+        Reproduzindo um áudio,podcast disponibilizado pelo curso
+        <br>
+        utilizar a tag &lt;audio&gt;
+    </p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.mp3" type="audio/ogg">
+        <source src="midia/guanacast-33.mp3" type="audio/wav">
+        <!--são os tipos de arquivos para áudios-->
+        <p>
+            Infelizmente seu naveador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a>
+        </p>
+    </audio>
+
+    <hr>
+    <h2>Vídeos</h2>
+    <p>
+        Se o vídeo estiver hospedado no própio servidor. Utilizar a tag &lt;video&gt; . <br>
+        Alguns atributos da tag &lt;video&gt;:
+        <ul>
+            <li>width = indica a largura que o vídeo ocupará na tela</li>
+            <li>poster = capa do vídeo, enquanto o vídeo não é reproduzido</li>
+            <li>controls = configura se os controles do vídeo vão aparecer na parte inferior, para ativar os controles adicionar controls na tag video</li>
+            <li>autoplay = diz para o navegador tocar o vídeo assim que a página for carregada</li>
+        </ul>
+        O correto é ter os vários formatos de vídeos para que ele possa ser reproduzido nos diferentes navegadores, dai fazer que nem nos audios.
+    </p>
+    <video src="midia/video.mp4" width="500" poster="imagens/capaVideo.png" autoplay controls ></video>
+    
+    <p>Adicionando vídeos que não estão hospedados no meu servidor, por exemplo um vídeo do youtube</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nYcyQ2z2NVY?si=Kgtr-SkaJdl7Y8Eg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
 </body>
 </html>

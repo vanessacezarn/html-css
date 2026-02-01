@@ -33,3 +33,11 @@
         * srcset que configura o nome da imagem que será carregada quando o tamanho for atingindo 
         * media indica o tamanho máximo a ser considerado para carregar a imagem indicada em srcset
         
+### Vídeos
+   
+* Utilizar a tag < video> se o vídeo estiver hospedado no própio servidor.
+    * Alguns atributos da tag < video>
+        * width = indica a largura que o vídeo ocupará na tela
+        * poster = capa do vídeo, enquanto o vídeo não é reproduzido
+        * controls = configura se os controles do vídeo vão aparecer na parte inferior, para ativar os controles adicionar controls na tag video
+        * autoplay = diz para o navegador tocar o vídeo assim que a página for carregada
