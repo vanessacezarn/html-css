@@ -7,12 +7,12 @@ body{
 }
 p{
     text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
 }
 main{
     background-color: white;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #909B71;
-;
     width: 600px;
     padding: 10px;
     margin: auto;
@@ -21,7 +21,9 @@ h1{
     text-align: center;
     color: #909B71;
     text-shadow: 1px 1px 1px yellowgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 h2{
     color: yellowgreen;
+    font: italic bolder 22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
