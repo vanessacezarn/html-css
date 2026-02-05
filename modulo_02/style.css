@@ -11,7 +11,7 @@ p{
     font-size: 16px;
 }
 main{
-    background-color: white;
+    background-color: rgb(255, 254, 254);
     border-radius: 15px;
     box-shadow: 5px 5px 5px #909B71;
     width: 600px;
@@ -20,7 +20,7 @@ main{
 }
 h1{
     text-align: center;
-    color: #909B71;
+    color: #e835bf;
     text-shadow: 1px 1px 1px yellowgreen;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
@@ -80,3 +80,57 @@ a:hover{
 a::after{ /*depois de todo link */
     content: ' [LINK]'; /*conteudo*/
 }
+
+h3{
+    width: 250 ;
+    height: 100;
+    background-color: #F9D59B;
+
+    border-width: 10px;
+    border-style: solid;
+    border-color: #909B71;
+    /* simplificado(shorthand): border :expessura, estilo ,cor */
+
+    padding-top:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    padding-left:10px
+    
+    /*simplificado (shorthand): padding: topo, direita, baixo, esquerda;    */
+
+}
+
+header{
+    width: 600px;
+    background-color: yellow;
+    margin: 10px;
+}
+nav{
+    background-color: lightgray;
+    box-shadow: 1px 2px 1px black;
+}
+nav > a{
+    color: rgb(64, 62, 62);
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+main#caixa{
+    background-color: #909B71;
+    padding: 5px;
+    margin: 55px,20px,30px 30px;
+    
+}
+article{
+    background-color: rgb(36, 169, 174);
+}
+article > aside{
+    background-color: #F69C9E;
+}
+footer{
+    background-color: teal;
+    text-align: center;
+    margin: 0px;
+}
+
+
