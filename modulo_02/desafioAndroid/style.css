@@ -28,6 +28,8 @@ body{
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
 }
+
+
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     text-align: center;
@@ -87,42 +89,87 @@ main  h1{
 }
 
 main h2{
-    background-color: #2B975A;
-    background-image: linear-gradient(to right,#84E1AD, white );
+    background-image: linear-gradient(to right,var(--cor1), transparent);
     color: #1a402b;
     font-family: var(--fonte-android);
+    font-size: 1.3em;
+    text-indent: 8px;
 }
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+
 main a{
     text-decoration: none;
     color: var(--cor5);
 }
+
+main a:hover{
+    text-decoration: underline;
+}
+
 main strong{
     color: var(--cor5);
+    font-weight: bold;
 }
+
 main img{
     width: 100%;
 }
+
 main img.pequena{
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
 
-section{
-    background-color: #bcf6d6;
+div.video{
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top:5% ;
+    left: 5% ;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color:var(--cor1) ;
+    padding: 10px;
     border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.484);
 }
-section > p{
-   padding: 5px;
+aside > ul{
+    list-style-type: '\1F5F8\00A0'; /* CODIGO DO EMOJI CHECK E CODIGO DO ESPAÇI*/
+    list-style-position: inside;
+    columns: 2;
 }
-h4{
-    background-color: #3CD681;
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
     padding: 5px;
-    border-radius: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px
+
 }
+
+
 
 footer{
     background-color: var(--cor5);
     color: white;
     text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
 }
