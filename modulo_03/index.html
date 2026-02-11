@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
+    <title>Módulo 03</title>
+    <style>
+        header{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            background-image: url(midia/wallpaper004.jpg);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h2{
+            text-align: center;
+        }
+        div.quadrado{
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: tan;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            margin: auto;
+        }
+        div#q1{
+            background-color: yellowgreen;
+        }   
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow, orange,red
+            );
+        }
+        div#q3{
+            background-image: url(midia/pattern003.png);
+        }
+        div#q4{
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+            background-size: 50px 50px;
+        }
+        div#q5{
+            background-image: url(midia/pattern003.png);
+            background-repeat: no-repeat; 
+        }
+        div#q6{
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+            background-repeat: repeat-x;
+            background-size: 50px 50px;
+        }
+        div#q7{
+            background-image: url(midia/wallpaper002.jpg);
+        }
+        div#q8{
+            background-image: url(midia/wallpaper002.jpg);
+            background-size: 300px 300px;
+            background-repeat: no-repeat;
+        }
+
+        div.bloco{
+            background-image: url(midia/wallpaper003.jpg);
+            height: 650px;
+            width:750px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        div#b1{
+            background-position: left top;
+        }
+        div#b2{
+            background-position: center left;
+        }
+        div#b3{
+            background-position: right bottom;
+        }
+        div#b4{
+            background-position: center center;
+        }
+
+        div.imagemFundo{
+            background-image: url(midia/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        div >main {
+            background-color: white;
+            color: rgb(10, 38, 8);
+            margin: auto;
+            width: 600px;
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+        section{
+            background-color:lightyellow;
+            height: 500px;
+            padding: 10px;
+            position: relative;
+            background-image: url(midia/target001.png);
+            background-size: 100% 100%;
+            
+        }
+        article{
+            background-color: lightblue;
+            height: 400px;
+            width: 750px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            
+            transform: translate(-50%, -50%);
+        }
+
+        
+       
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Módulo 03 </h1>
+    </header>
+    <h2>Imagens de Fundo</h2>
+    <p>
+        A várias formas de colorir um bloco ➔ podemos utilizar background-color: cor, que irá deixar o bloco com uma cor única, ou background-image: linear-gradient que permite um degrade e agora vamos colocar uma imagem de fundo no bloco, utilizando <strong>background-image: url</strong>, essas imagens de fundo podem ser de uma imagem salva no servidor ou uma disponivel na internet
+    </p>
+    
+    
+    <div class="quadrado" id="q1">      </div>
+    <div class="quadrado" id="q2">      </div>
+    <div class="quadrado" id="q3">      </div>
+    
+    
+    <p> A imagem se repete para completar todo o bloco que ela está designada, por tanto se for uma imagem muito pequena ela será replicada inumeras vezes até completar todo bloco, no entanto nas configurações de css pode-se configurar se não deseja que as imagens sejam replicadas utilizando backgroud-repeat: no-repeat, ou se quiser que a imagem se repita em apenas uma direção, como por exemplo, somente no eixo x, utiliza-se backgroud-repeat: repeat-x</p>
+
+
+    <div class = "quadrado" id="q4">    </div>
+    <div class = "quadrado" id="q5">    </div>
+    <div class = "quadrado" id="q6">    </div>
+    
+    <p>
+        No entanto, se a imagem escolhida for muito grande ela o bloco será preenchido com apenas um pedaço da imagem, ou seja, a imagem não se adapta ao tamanho do bloco, exemplo dos blocos que aparecem um prédio, na primeira imagem aparece somente um pedaço de um dos prédios, mas no segundo bloco ao utilizar background-size e definir um tamanho menor para imagem é possível ver ela por completo
+    </p>
+
+
+    <div class = "quadrado" id="q7"> </div>
+    <div class = "quadrado" id="q8"> </div>
+
+    <h2>Posicionando a imagem de fundo</h2>
+    <h4> posição: left top</h4>
+    <div class="bloco" id="b1">  </div>
+    <h4> posição: left center </h4>
+    <div class="bloco" id="b2">  </div>
+    <h4> posição: right bottom</h4>
+    <div class="bloco" id="b3">  </div>
+    <h4> posição: center center</h4>
+    <div class="bloco" id="b4">  </div>
+
+    <h2>Fundo com a main</h2>
+    <div class="imagemFundo">
+        <main>
+            <p>
+                Para quando for configurar o fundo inteiro da página, algumas propiedades podem ajudar como background-size: 100% e background-repeat: o-repeat essa propiedade não distorce a imagem tranforme muda o tamanho da tela, porém quando o tamanho da imagem é menor que o tamanho da página o que <q>falta</q> fica preto. <br> Se mudar os dois background-size: 100% 100% e height: 100vh a imagem passa a ficar do tamanho da tela porém distorce a imagem quando aumenta ou diminui o tamanho da página
+            </p>
+            <p>
+                Outra forma seria o é backgroud-size: contains, que mostra a imagem por inteiro, no entanto pode também não resolver, se deixar parte da tela preta, imagem não muito grande ou página aberta em uma tv.
+            </p>
+            <p> 
+                Outra forma ainda seria a propiedade backgroud-size: cover que cobre a tela inteira, mesmo que seja preciso <q>cortar</q> um pedaço da imagem para adaptar a página
+            </p>
+            <p>
+                É possível deixar a imagem de fundo <q>travada</q> na tela para que ela não fique se mexendo durante a rolagem da página background-attachment: fixed;
+            </p>
+            <p style="color: tomato;">
+                SHORTHAND - backgroud segue a seguinte ordem: color image position repeat attachment
+            </p>
+            <p>* detalhe em teoria o size faz parte ficando entre repeat e attachment entretanto no momento não está funcionando então tem que configurar ele individualmente</p>
+        </main>
+    </div>
+
+    <h2> CENTRALIZAÇÃO VERTICAL</h2>
+    <section>
+        <article>
+            <p>
+                Para alinhar um bloco horizitalmente pode-se utilizar a propiedade margin:auto; entretanto para alinhar verticalmente não tem uma propiedade especifica. Por exemplo se estiver utilizando um article dentro de um section e quiser deixa-lo centralizado, tanto na vertical tanto na horizontal, pode configurar as seguintes propiedade:
+                <ul>
+                    <li>em section</li>
+                    <ul>
+                        <li>position:relative</li>
+                    </ul>
+                    <li>em article</li>
+                    <ul>
+                        <li>position:absolute ➔ permite que duas propiedades importantes sejam configuradas </li>
+                        <li>left: 50% e top: 50%</li>
+                        <li>transform:translate(-50%,-50%)</li>
+                    </ul>
+                </ul>
+            </p>
+            <p>
+                Foi utilizado no fundo um <q>alvo</q> para ter certeza que esta no meio
+            </p>
+            <p> 
+                Para ficar bem centralizado é preciso configurar a propiedade transform: translate(); para alinhar os dois centros 
+            </p>
+        </article>
+    </section>
+
+    
+
+
+     
+
+    
+</body>
+</html>
