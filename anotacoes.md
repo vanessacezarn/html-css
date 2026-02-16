@@ -105,5 +105,10 @@
 |thead > tr > th{ position: sticky; top: 0;} | cabeçalho fixo na tabela|
 |colspan = ' '| coluna ocupar mais de uma célula|
 |rowspan = ' '| coluna ocupar mais de uma célula|
-
+| display     | como um elemento html será exibido na página|
+| display: block| ocupa toda a largura disponivel, quebra linha antes e depois|
+| display: inline| não quebra linha e ocupa apenas o espaço do conteúdo|
+| display: inline-block| Fica na mesma linha, mas permite definir width e height|
+| display: flex | Transforma o elemento em um container flexível (Flexbox)|
+| display: grid | Transforma o elemento em um container de grade (Grid Layout).|
 
