@@ -53,6 +53,12 @@
 | color | cor|
 |backgroud-image:|  cor de fundo  |
 | backgroud-image: linear-gradient| degrade|
+|backgroud-image: url()|imagem no fundo|
+|background-attachment: |se a imagem de fundo vai rolar junto com a página|
+|background-attachment: scroll| imagem rola junto com o conteúdo|
+|background-attachment: fixed | imagem fixa mesmo quando rola a página|
+|background-attachment: local| fundo rola com o conteúdo interno|
+
 | style     | estilo              |
 |text-align | alinhamento do texto|
 |font-family| fonte da letra      |
