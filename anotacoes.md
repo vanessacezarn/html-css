@@ -36,6 +36,15 @@
 | < aside>  | delimita conteúdo periférico|
 | < footer> | área de rodapé     |
 | < div>    | elemento de bloco  |
+| < table>  | tabela             |
+| < tr>     | linha da tabela    |
+| < th>     | cabeçalho de tabela|
+| < td>     | dado da tabela|
+| < caption>| legenda da tabela|
+| < thead>  | cabeçalho da tabela |
+| < tbody>  |   corpo da tabela|
+| < tfoot>  | rodapé da tabela
+
 
 
 # CSS
@@ -92,3 +101,9 @@
 | :active  | se está ativo      |
 |:root | seletor para criar variáveis|
 | *    | seletor universal      | 
+| tbody > th:nh-child(2n) |efeito zebrado na tabela|
+|thead > tr > th{ position: sticky; top: 0;} | cabeçalho fixo na tabela|
+|colspan = ' '| coluna ocupar mais de uma célula|
+|rowspan = ' '| coluna ocupar mais de uma célula|
+
+
