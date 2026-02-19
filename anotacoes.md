@@ -58,7 +58,6 @@
 |background-attachment: scroll| imagem rola junto com o conteúdo|
 |background-attachment: fixed | imagem fixa mesmo quando rola a página|
 |background-attachment: local| fundo rola com o conteúdo interno|
-
 | style     | estilo              |
 |text-align | alinhamento do texto|
 |font-family| fonte da letra      |
