@@ -16,6 +16,9 @@ h1{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+h1.titulo{
+    background-color: rgb(91, 203, 203);
+}
 p{
     padding: 5px;
     text-indent: 10px;

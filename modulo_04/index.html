@@ -22,7 +22,7 @@
     <p> também é possivel colocar páginas produzidas por mim mesmo</p>
     <iframe class="pag"src="paginasExtras/pag01.html" frameborder="0"></iframe>
 
-    <h1>Navegação no iframe</h1>
+    <h1 class="titulo">Navegação no iframe</h1>
     <p>Aprendendo a direcionar uma página para um iframe quando clicar em um link </p>
     <p> Escolha uma das páginas abaixo:</p>
     <p>Para ao clicar no link e em vez de abrir em uma nova página ele preencher o iframe é necessario que no iframe seja adicionado o name="xx" e no link que direciona para a página nova seja colocado target="xx" </p>
@@ -35,6 +35,17 @@
     <p>
         para que o iframe não inicie em branco pode-se colocar no src o caminho para alguma página html ou podemos trocar o src pelo srcdoc que permite que escreva html dentro do iframe
     </p>
+
+    <h1 class="titulo">Formulário</h1>
+    <p>Tornando o iframe mais seguro, exemplo abaixo de iframe  utilizando um formulario de cadastro, utilizar sandbox = "sandbox" para evitar que a pessoa se cadastre para evitar possíveis ataques, já a propiedade referrerpolicy="no-referrer" bloqueia a coleta de dados no meusite que a página que esta dentro do iframe poderia fazer </p>
+    <iframe class="pag" src="paginasExtras/pag04.html" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+
+    <h1 class="titulo">iframe com uma pagina que utiliza JavaScript</h1>
+    <p>se por exemplo quiser bloquear tudo exceto scripts utilizar na propiedade sandbox = "allow-scripts"</p>
+    <iframe class="pag" src="paginasExtras/pag05.html" sandbox="allow-scripts" referrerpolicy="no-referrer"</iframe>
+
+    
+
     <footer>
         <p>Página 01 - iframe</p>
     </footer>
