@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 04</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Módulo 4 - iframe</h1>
+    </header>
+    <p>
+        exemplo de uso do iframe, o tamanho padrão do iframe 300x150, pode ser configurado tanto dentro da tag tanto no style, mas sempre prevale as configurações feitas dentro do style.
+        
+    </p>
+    <iframe id="iniciando"  src="https://www.cursoemvideo.com/" frameborder="0" height="450"> 
+            <a href="https://www.cursoemvideo.com/"> Curso em video</a>
+        </iframe>
+
+    <p> também é possivel colocar páginas produzidas por mim mesmo</p>
+    <iframe class="pag"src="paginasExtras/pag01.html" frameborder="0"></iframe>
+
+    <h1>Navegação no iframe</h1>
+    <p>Aprendendo a direcionar uma página para um iframe quando clicar em um link </p>
+    <p> Escolha uma das páginas abaixo:</p>
+    <p>Para ao clicar no link e em vez de abrir em uma nova página ele preencher o iframe é necessario que no iframe seja adicionado o name="xx" e no link que direciona para a página nova seja colocado target="xx" </p>
+    <ul>
+        <li><a href="paginasExtras/pag01.html" target="frame">Primeira página</a></li>
+        <li><a href="paginasExtras/pag02.html" target="frame">Segunda página</a></li>
+        <li><a href="paginasExtras/pag03.html" target="frame">Terceita página</a></li>
+    </ul>
+    <iframe class="pag" name="frame" srcdoc="<h1> escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum aperiam nesciunt cumque libero eaque est illo ipsa distinctio sapiente fuga beatae quidem id officiis, sunt error. Veritatis unde vero aut.</p>" ></iframe>
+    <p>
+        para que o iframe não inicie em branco pode-se colocar no src o caminho para alguma página html ou podemos trocar o src pelo srcdoc que permite que escreva html dentro do iframe
+    </p>
+    <footer>
+        <p>Página 01 - iframe</p>
+    </footer>
+</body>
+</html>
