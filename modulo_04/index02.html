@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style02.css">
+</head>
+<body>
+    <header>
+        <p ><a href="index02.html">página 01</a></p>
+        <h1>Módulo 04 - Formulário</h1>
+        <p><a href="#">página 03</a></p>
+    </header>
+    
+    <main>
+        <p>
+            Para criar um formulário deve-se utilizar a tag form e dentro dela a tag p para cada item do formulário e detro desse item utilizar a tag input type="text" name='' id'' alem é claro do input type='submit' value='enviar' para adicionar o botão para salvar
+        </p>
+        <h2>Primeiro formulário</h2>
+        <form action="cadastro.php" autocomplete="off" >
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="isobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="isobrenome">
+            </p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+        <p>
+            os dados cadastrados no formulario precisar ser salvos em algum arquivo para isso dentro da tag form deve-se colocar action = '' e o caminho/nome para o arquivo
+        </p>
+    </main>
+        
+    <footer>
+        <h3>Módulo 04   |   Página 02 - fórmulários  </h3>
+        <p>
+            página 01- <a href="index.html" target="_blank">iframe</a> |
+            página 03- <a href="#">Media Queries</a> |
+            projeto do módulo 04 - <a href="projetoRedesSociais/index.html" target="_blank">Redes Sociais</a>
+        </p>
+
+        <h4>Demais módulos estudados no curso de html e css</h4>
+        <div>
+            <ul>
+                <li><a href="../modulo_01/index_01.html" target="_blank">Módulo 01 </a></li>
+                <li><a href="../modulo_02/index_01.html" target="_blank">Módulo 02 </a></li>
+                <li><a href="../modulo_03/index.html" target="_blank">Módulo 03 </a></li>
+                <li> <a href="#" target="_blank">Módulo 05</a></li>
+
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
