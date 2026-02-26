@@ -1,0 +1,139 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+}
+body{
+    background-color: rgb(209, 246, 209);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    text-align: center;
+    background-color: rgb(152, 202, 135);
+    color: white;
+    padding: 8px; 
+    display: flex; /*coloca os elementos na mesma linha*/
+    justify-content: space-between; /* joga uma para cada lado*/
+}
+
+section{
+    gap: 40px;
+    margin: 5px auto;
+    min-width: 500px;
+    text-align: center;
+
+}
+
+ol{
+    display: inline-block;
+    text-align: left;
+}
+
+table#simples{
+    padding-top: 10px;
+    width: 250px;
+    height: 250px;
+    border-collapse: collapse;
+    border: 5px solid red;
+    margin: auto;
+}
+
+td,th{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+tr.linha{
+    background-color: yellow;
+}
+
+table#grande{
+    width: 400px;
+    padding: 10px;
+    border-collapse: collapse;
+    margin: auto;
+    position: relative;
+
+}
+caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: darkturquoise;
+}
+thead, tfoot{
+    background-color: skyblue;
+}
+
+/*para fixar o cabeçalho da tabela transforme for indo para baixo a rolagem da página*/
+table#grande thead > tr > th{
+    position: sticky;
+    top: 0;
+    background-color: skyblue;
+}
+
+/*efeito zebrado na tabela*/
+table#grande tbody > tr:nth-child(2n){
+    background-color: rgb(197, 241, 246);
+}
+p{
+    padding: 5px;
+    text-indent: 25px;
+}        
+
+
+table#mesclagem{
+    border-collapse: collapse;
+    width: 300px;
+    margin: auto;
+}
+h2{
+    text-align: center;
+    background-color: yellowgreen;
+    padding-top: 0px;
+    margin: 0px;
+}
+table.exercicio{
+    width: 250px;
+    margin: auto;
+}
+table.exe{
+    margin: auto;
+    width: 300px ;
+    border-collapse: collapse;
+}
+col.nome{
+    background-color: yellow;
+}
+
+tr.media{
+    background-color: lightgrey;
+}
+div.container{
+    overflow-x: auto;
+}
+
+p#voltar{
+    text-align: center;
+    padding: 20px;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(31, 93, 31);
+}
+footer{
+    padding: 15px;
+    background-color:  rgb(152, 202, 135);
+    text-align: center;
+    color: white;
+}
+footer > h4{
+    padding-top: 10px;
+}
+
+footer div{
+    list-style-position: inside;
+    columns: 4;
+    padding-top: 5px;
+}

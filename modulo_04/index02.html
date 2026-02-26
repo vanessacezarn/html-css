@@ -3,13 +3,13 @@
 <head>
     <meta charset="pt-br">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Modulo 04 - Formulario</title>
     <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style02.css">
 </head>
 <body>
     <header>
-        <p ><a href="index02.html">página 01</a></p>
+        <p ><a href="index.html">página 01</a></p>
         <h1>Módulo 04 - Formulário</h1>
         <p><a href="#">página 03</a></p>
     </header>
@@ -19,22 +19,94 @@
             Para criar um formulário deve-se utilizar a tag form e dentro dela a tag p para cada item do formulário e detro desse item utilizar a tag input type="text" name='' id'' alem é claro do input type='submit' value='enviar' para adicionar o botão para salvar
         </p>
         <h2>Primeiro formulário</h2>
-        <form action="cadastro.php" autocomplete="off" >
-            <p>
-                <label for="inome">Nome:</label>
-                <input type="text" name="nome" id="inome">
-            </p>
-            <p>
-                <label for="isobrenome">Sobrenome: </label>
-                <input type="text" name="sobrenome" id="isobrenome">
-            </p>
-            <p><input type="submit" value="Enviar"></p>
-        </form>
+        <div class="formulario">
+            <form action="cadastro.php" method="get" autocomplete="off" >
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome">
+                </p>
+                <p>
+                    <label for="isobrenome">Sobrenome: </label>
+                    <input type="text" name="sobrenome" id="isobrenome">
+                </p>
+                <p><input type="submit" value="Enviar"></p>
+            </form>
+        </div>
         <p>
-            os dados cadastrados no formulario precisar ser salvos em algum arquivo para isso dentro da tag form deve-se colocar action = '' e o caminho/nome para o arquivo
+            os dados cadastrados no formulario precisar ser salvos em algum arquivo para isso dentro da tag form deve-se colocar action = " " e o caminho/nome para o arquivo. Para desativar o autocomplete para evitar que no formulario apareca sugestão enquanto digita basta adicionar na tag form a propriedade autocomplete="off"
         </p>
-    </main>
+
+        <h2>
+            Formulário que possui senha
+        </h2>
         
+        <div class="formulario">
+            <form action="cadastro.php" method="post" autocomplete="on">
+                <p>
+                    <label for="iusu">Usuario:</label>
+                    <input type="text" name="usu" id="iusu" required  minlength="5" maxlength="15" placeholder="digite o usuario" autocomplete="username">
+                </p>
+                <p>
+                    <label for="isen">Senha:</label>
+                    <input type="password" name="sen" id="isen" required minlength="8" size="12" placeholder="digite sua senha" autocomplete="current-password">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+        <p>Sempre que utilizar dados sensiveis utilizar method de salvamento post pois se usar get as informações são adicionadas a url. Para que não apareca a senha enquanto digita colocar no input o type password. E para que não permita enviar um formulario sem preencher um dado no input deve ser adicionado required
+        </p>
+        <p>
+            Para determinar o minimo e o maximo de caracteres que caixa do formulario deve ter precisa-se adicionar no input as propriedade minlength="" e maxlength="" com os respectivos tamanho. Se quiser mudar o tamanho da caixa na tag input adicionar a propriedade size="" com o tamanho. Se quiser deixar um texto dentro da caixa enquanto o usuário não digita nada basta adicionar a propriedade placeholder="texto."
+        </p>
+        <p>
+            Para páginas de login é interessante deixar o autocomplete ligado para facilitar para o usuario, para isso na tag form colocar a propriedade autocomplete="on" e em cada input do login adicionar o autocomplete referente ao dado por exemplo para nome utilizar autocomplete="username"
+        </p>
+        
+        <h2>Tipos de dados: number, month, date, time</h2>
+        <div class="formulario">
+            <form action="cadastro.php" method="post" autocomplete="on">
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required placeholder="nome completo" autocomplete="name">
+                </p>
+                <p>
+                    <label for="imed">Média:</label>
+                    <input type="number" name="med" id="imed" required min="0" max="10" placeholder="0 a 10" step="0.1">
+                </p>
+                <p>
+                    <label for="imes">Período Letivo</label>
+                    <input type="month" name="mes" id="imes" value="2026-02">
+                </p>
+                <p>
+                    <label for="idia">Dia da prova</label>
+                    <input type="date" name="dia" id="idia" >
+                </p>
+                <p>
+                    <label for="ihora">Hora da prova</label>
+                    <input type="time" name="Hora" id="ihora">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+        <p>
+            Quando o type do input for number o usuario só pode digitar numeros para definir qual a faixa de números que será aceita deve-se utilizar as propriedades min e max com os respectivos numeros desejados além disso pode-se definir quais os intervalos entre os números que serão aceitos
+        </p>
+        <p>
+            Type month permite escolher o mesmo e o ano, já type date permite escolher também o dia, ou seja, dia,mês e ano. Para sugerir uma data ou até mesmo um number utiliza-se value="" diferentemente de quando é um texto que utiliza a propriedade placeholder. Já para adicionar uma caixa para adiconar a hora bastar adicionar um input com type="time"
+        </p>
+        <h2>Telefone e e-mail</h2>
+    </main>
+    
+        
+
+
+
     <footer>
         <h3>Módulo 04   |   Página 02 - fórmulários  </h3>
         <p>

@@ -5,142 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
-    <style>
-        *{
-            margin: 0px;
-        }
-        body{
-            background-color: rgb(209, 246, 209);
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        header{
-            text-align: center;
-            background-color: rgb(152, 202, 135);
-            padding:15px ;
-            color: white;
-        }
-        header > p{
-            text-align: right;
-        }
-        section{
-            gap: 40px;
-            margin: 5px auto;
-            min-width: 500px;
-            text-align: center;
+    <link rel="stylesheet" href="style2.css">
 
-        }
-        
-        ol{
-            display: inline-block;
-            text-align: left;
-        }
-
-        table#simples{
-           padding-top: 10px;
-            width: 250px;
-            height: 250px;
-            border-collapse: collapse;
-            border: 5px solid red;
-            margin: auto;
-        }
-
-        td,th{
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-            vertical-align: middle;
-        }
-        tr.linha{
-            background-color: yellow;
-        }
-
-        table#grande{
-            width: 400px;
-            padding: 10px;
-            border-collapse: collapse;
-            margin: auto;
-            position: relative;
-
-        }
-        caption{
-            font-size: 1.5em;
-            font-weight: bold;
-            padding: 10px;
-            background-color: darkturquoise;
-        }
-        thead, tfoot{
-            background-color: skyblue;
-        }
-
-        /*para fixar o cabeçalho da tabela transforme for indo para baixo a rolagem da página*/
-        table#grande thead > tr > th{
-            position: sticky;
-            top: 0;
-            background-color: skyblue;
-        }
-
-        /*efeito zebrado na tabela*/
-       table#grande tbody > tr:nth-child(2n){
-            background-color: rgb(197, 241, 246);
-        }
-        p{
-            padding: 5px;
-            text-indent: 25px;
-        }        
-        
-
-        table#mesclagem{
-            border-collapse: collapse;
-            width: 300px;
-            margin: auto;
-        }
-        h2{
-            text-align: center;
-            background-color: yellowgreen;
-            padding-top: 0px;
-            margin: 0px;
-        }
-        table.exercicio{
-            width: 250px;
-            margin: auto;
-        }
-        table.exe{
-            margin: auto;
-            width: 300px ;
-            border-collapse: collapse;
-        }
-        col.nome{
-            background-color: yellow;
-        }
-       
-        tr.media{
-            background-color: lightgrey;
-        }
-        div.container{
-            overflow-x: auto;
-        }
-
-        p#voltar{
-            text-align: center;
-            padding: 20px;
-            
-        }
-        a{
-            text-decoration: none;
-            color: rgb(31, 93, 31);
-        }
-        footer{
-            padding: 15px;
-            background-color:  rgb(152, 202, 135);
-            text-align: center;
-            color: white;
-        }
-    </style>
 </head>
 <body>
     <header>
+        <p><a href="index.html" target="_blank">página 01</a></p>
         <h1>Módulo 03 - TABELAS</h1>
-        <p><a href="index.html" target="_blank">voltar para página 01</a></p>
+        <p>  </p>
     </header>
      
 
@@ -548,13 +420,23 @@
         </tbody>
     </table>
 
-   
-    <p id="voltar">
-        Para voltar para página sobre imagens de fundo, <a href="index.html">clique aqui</a>
-    </p>
-
     <footer>
-        <p>página 02 - tabelas </p>
+         <h3>Módulo 03   |   Página 02 - tabelas  </h3>
+        <p>
+            página 01- <a href="index.html" >imagens de fundo</a> |
+            projeto do módulo 03 - <a href="projetoCordel/index.html" target="_blank">Cordel</a>
+        </p>
+
+        <h4>Demais módulos estudados no curso de html e css</h4>
+        <div>
+            <ul>
+                <li><a href="../modulo_01/index_01.html" target="_blank">Módulo 01 </a></li>
+                <li><a href="../modulo_02/index_01.html" target="_blank">Módulo 02 </a></li>
+                <li><a href="../modulo_04/index.html" target="_blank">Módulo 04 </a></li>
+                <li> <a href="#" target="_blank">Módulo 05</a></li>
+
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

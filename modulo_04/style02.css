@@ -24,6 +24,8 @@ h1.titulo{
 }
 h2{
     padding-left: 25px;
+    text-align: center;
+    background-color: rgb(91, 203, 203);   
 }
 p{
     padding: 5px;
@@ -38,6 +40,12 @@ a{
 a:hover{
     text-decoration: solid;
     color: rgb(87, 113, 34);
+}
+div.formulario{
+    background-color: white;
+    text-align: center;
+    margin: 5px auto;
+    width: 280px;
 }
 
 footer{
