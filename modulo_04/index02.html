@@ -41,7 +41,7 @@
         </h2>
         
         <div class="formulario">
-            <form action="cadastro.php" method="post" autocomplete="on">
+            <form action="" method="post" autocomplete="on">
                 <p>
                     <label for="iusu">Usuario:</label>
                     <input type="text" name="usu" id="iusu" required  minlength="5" maxlength="15" placeholder="digite o usuario" autocomplete="username">
@@ -67,7 +67,7 @@
         
         <h2>Tipos de dados: number, month, date, time</h2>
         <div class="formulario">
-            <form action="cadastro.php" method="post" autocomplete="on">
+            <form action="" method="post" autocomplete="on">
                 <p>
                     <label for="inome">Nome:</label>
                     <input type="text" name="nome" id="inome" required placeholder="nome completo" autocomplete="name">
@@ -101,12 +101,152 @@
             Type month permite escolher o mesmo e o ano, já type date permite escolher também o dia, ou seja, dia,mês e ano. Para sugerir uma data ou até mesmo um number utiliza-se value="" diferentemente de quando é um texto que utiliza a propriedade placeholder. Já para adicionar uma caixa para adiconar a hora bastar adicionar um input com type="time"
         </p>
         <h2>Telefone e e-mail</h2>
+        <div class="formulario">
+            <form action="" method="post" autocomplete="on">
+                <p>
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" required  autocomplete="email">
+                </p>
+                <p>
+                    <label for="itel">Telefone:</label>
+                    <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="\d{2}\d{4,5}\d{4}" placeholder="(xx)xxxx-xxxx">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+        <h2>checkbox e radio button</h2>
+        <div >
+            <form method="get" autocomplete="on">
+                <fieldset>
+                    <legend>sexo</legend>
+                    <input type="radio" name="sexo" id="isxmas"><label for="isxmas">Maculino</label>
+                    <input type="radio" name="sexo" id="isfem"><label for="isxfem">Feminino</label>
+                   
+                </fieldset>
+                <fieldset>
+                    <legend>Esportes favritos</legend>
+                    <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">basquete</label><br>
+                    <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">futebol</label><br>
+                    <input type="checkbox" name="esvol" id="iesvol"><label for="iesvol">vôlei</label><br>
+                    <input type="checkbox" name="escor" id="iescor"><label for="iescor">corrida</label><br>
+                </fieldset>                
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+
+        <p>
+            para radio button os input tem que ter o mesmo nome para que apenas uma opção possa ser escolhida, caso contrario todas as opções podem ser marcadas e não se consegue desmarcar
+        </p>
+
+        <h2>carregar uma foto</h2>
+        <div class="formulario">
+            <form method="post" autocomplete="on">
+                <p>
+                    <label for="ifoto">Foto de perfil:</label>
+                    <input type="file" name="foto" id="idfoto"                       >
+                </p>
+                
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+        <h2>select, datalist, textarea</h2>
+        <div class="formulario">
+            <form action="" method="post" autocomplete="on">
+                <p>
+                    <label for="iest">estado:</label>
+                    <select name="estado" id="iest">
+                        <option value="">--escolha--</option>
+                        <optgroup><label for="região sudeste"></label>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerias</option>
+                        </optgroup>
+
+                        <optgroup> <label for="região sul"></label>
+                            <option value="PR">paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                        </optgroup>
+                    </select>
+                </p>
+               <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option>Administrador</option>
+                    <option>Programador</option>
+                </datalist>
+               </p>
+               <p>
+                <label for="imsg">mensagem:</label>
+                <textarea name="msg" id="imsg  cols="30" rows="8"></textarea>
+               </p>
+
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+        <p>Diferença entre o select e datalist é o que select so permite escolher as opções que foram fornecidas no codigo durante a construção do formulário, enquanto datalist permite que o usuário escreva com suas palavras ou selecione uma opção disponivel. Já textarea permite apenas que usuário digite algo, não fornece opções de escolha </p>
+        <h2>output</h2>
+        <div class="formulario">
+            <form action="" method="post" autocomplete="on">
+                <p>
+                    <label for="in1">numero 1:</label>
+                    <input type="number" name="n1" id="in1" required min="0" max="50" oninput="isoma.innerHTML = Number(in1.value)+ Number(in2.value)">
+                </p>
+                <p>
+                    <label for="in2">numero 2:</label>
+                    <input type="number" name="n2" id="in2" required min="0" max="50" oninput="isoma.innerHTML = Number(in1.value)+ Number(in2.value)">
+                </p>
+                <p>
+                    <label for="isoma">Soma:</label>
+                    <output name="soma" id="isoma">0</output>
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+        <p>
+            calculando a idade de acordo com ano de nascimento
+        </p>
+        <div class="formulario">
+            <form  method="post" autocomplete="on">
+                <p>
+                    <label for="iano">Em que ano você nasceu</label>
+                    <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calIdade()">
+                </p>
+                
+                <p>
+                    <label for="iidade">Sua idade é de :</label>
+                    <output id="iidade">0</output>
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+        <script>
+            function calIdade(){
+                let atual = new Date().getFullYear()
+                iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+        </script>
     </main>
     
-        
-
-
-
     <footer>
         <h3>Módulo 04   |   Página 02 - fórmulários  </h3>
         <p>
