@@ -1,13 +1,11 @@
 @charset "UTF-8";
+/*Estilo para telas*/
 *{
     margin:0px;
+    padding: 0px;
 }
 header{
-    text-align: center;
     background-color: skyblue;
-    padding: 8px; 
-    display: flex; /*coloca os elementos na mesma linha*/
-    justify-content: space-between; /* joga uma para cada lado*/
 }
 
 body{
@@ -19,11 +17,44 @@ h1{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+i#burguer{
+    background-color:rgba(122, 122, 234, 0.158); 
+    color: rgb(13, 25, 185);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+i#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
+menu{
+    display: none;
+}
+menu ul{
+    list-style-type: none;
+    background-color: rgb(79, 170, 212);
+}
+menu li{
+    background-color: rgba(122, 122, 234, 0.158);
+    color: rgb(13, 25, 185);
+    display: inline-block;
+    padding: 10px;
+}
+div.iframe{
+    display: flex;
+    justify-content: center;   /* centraliza horizontal */
+    align-items: center;       /* centraliza vertical */
+    
+}
 
 h2{
     padding-left: 25px;
     text-align: center;
     background-color: rgb(91, 203, 203);   
+    
 }
 p{
     padding: 5px;
@@ -39,12 +70,7 @@ a:hover{
     text-decoration: solid;
     color: rgb(87, 113, 34);
 }
-div.formulario{
-    background-color: white;
-    text-align: center;
-    margin: 15px auto;
-    width: 315px ;
-}
+
 
 footer{
     text-align: center;

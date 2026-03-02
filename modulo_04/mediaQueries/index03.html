@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 04 - Media Queries</title>
+    <link rel="shortcut icon" href="../midia/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="03_tela.css" media="screen">
+    <link rel="stylesheet" href="03_impressora.css" media="print">
+    <link rel="stylesheet" href="styleMenu.css">
+</head>
+<body>
+    <header>
+        <!--
+        <p>página<a href="index.html"> 01</a> ou <a href="index02.html"> 02</a></p>-->
+        <h1>Módulo 04 - Media Queries</h1>
+        
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li>esportes</li>
+                <li>politica</li>
+                <li>tecnnologia</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <p>
+            Media Queries são fundamentais para design responsivo, pois permite aplicar estilos diferentes baseados nas características do dispositivo, como largura,/altura da tela, orientação ou resolução. Dessa forma altera o layout sem alterar o conteúdo, garantindo uma experiência ideal em desktop, tablets e celulares.
+        </p>
+        <h2>Site com versão para impressora</h2>
+        <p>criar dois arquivos de css um para pagina web e outro apenas para impressoras, isso permite retirar ou colocar partes importante para cada uma das opções desejada, por exemplo para impressão do site não é necessario o menu já que não será possivel acessa-lo, logo no style de impressora não ele não precisa aparecer.</p>
+        <h2>Diferentes orientações de tela</h2>
+        <p>
+            Também foi estudado como configurar as páginas para as diferentes orientações da tela. 
+            Se você quiser testar, basta <a href="index04.html">clicar</a> para abrir a página de exemplo. 
+            Ela também está logo abaixo, mas para poder ver o que acontece quando muda a orientação você tem que abriar a página.
+        </p>
+        <div class="iframe"><iframe src="index04.html" height="370px" width="500px"></iframe></div>
+
+        <h2>Mudando transforme aumenta ou diminui a pagína</h2>
+        <p>
+            Dependo do tamanho que sua página estiver ela tera fundo diferentes, para testar <a href="index05.html">clique</a> para abrir a página, exemplo de uma das páginas disponível está logo abaixo.
+        </p>
+        <div class="iframe"><iframe src="index05.html" height="370px" width="500px"></iframe></div>
+
+    </main>
+
+    <footer>
+        <h3>Módulo 04   |   Página 03 - Media Queries  </h3>
+        <p>
+            página 01- <a href="../index.html" target="_blank">iframe</a> |
+            página 02- <a href="../index02.html" target="_blank">Formulário</a> |
+            projeto do módulo 04 - <a href="projetoRedesSociais/index.html" target="_blank">Redes Sociais</a>
+        </p>
+
+        <h4>Demais módulos estudados no curso de html e css</h4>
+        <div>
+            <ul>
+                <li><a href="../../modulo_01/index_01.html" target="_blank">Módulo 01 </a></li>
+                <li><a href="../../modulo_02/index_01.html" target="_blank">Módulo 02 </a></li>
+                <li><a href="../../modulo_03/index.html" target="_blank">Módulo 03 </a></li>
+                <li> <a href="#" target="_blank">Módulo 05</a></li>
+
+            </ul>
+        </div>
+    </footer>
+    <!--javascript para dar dinamica para o menu-->
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
