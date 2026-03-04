@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*Media query para tablet e Desktop
+tela pequena e celular está feita no style 
+*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: linear-gradient(to top, #45dad5, rgb(208, 163, 208));
+    }
+    section#login{
+        width: 80vw;
+        height: 265px;
+    }
+    section#login > div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    section#login > div#formulario{
+        float: right;
+        width: 70%;
+    }
+    div.campo > input {
+    width: 355px;
+    }
+
+}
+
+/*desktop e grande telas*/
+@media screen and (min-width: 992px){
+    body{
+        background-image: linear-gradient(to top,  #45dad5, rgb(208, 163, 208));
+    }
+    section#login{
+        width: 950px;
+         height: 325px;
+    }
+    section#login > div#imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+    section#login > div#formulario{
+        float: left;
+        width: 50%;
+    }
+    div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+    div#formulario > p{
+        font-size: 1.2em;
+    }
+    div.campo > input {
+    width: 364px;
+}
+}
+
+
