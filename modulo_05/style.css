@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+*{
+    margin:0px;
+}
+header{
+    text-align: center;
+    background-color:#f5bcad;
+    padding: 8px; 
+    color: #696d4a;
+    /*display: flex; /*coloca os elementos na mesma linha*/
+    /*justify-content: space-between; /* joga uma para cada lado*/
+}
+
+body{
+    background-color:#F4EEED;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+main > p{
+    padding: 5px;
+    text-indent: 2em;
+}
+h3{
+    background-color: #F2DBD5;
+    text-align: center;
+    color: #696d4a;
+    padding: 6px;
+    font-size: 25px;
+}
+
+div.conteiner{
+    display: flex;
+    flex-direction: row;
+    
+}
+div.item{
+    background-color: rgb(231, 209, 226);
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+    /*flex: auto; foi feita a configuração flex-direction na div.conteiner*/
+}
+
+table#eixos{
+    padding-top: 10px;
+    width: 100%;
+    max-width: 750px;
+    border-collapse: collapse;
+    border: 5px solid rgb(122, 121, 121);
+    margin: auto;
+}
+
+td,th{
+    border: 1px solid black;
+    padding: 7px;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word; /*quebra de textos muito grandes*/
+}
+.container-tabela {
+    overflow-x: auto;
+}

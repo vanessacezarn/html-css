@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>FlexBox</title>
+    
+</head>
+<body>
+    <header>
+        <h1>FLEXBOX</h1>
+    </header>
+
+    <main>
+        <p>O que são? caixas flexíveis, trabalha a resposividade, se adapta ao dispositivo em que se está sendo aberto o site. É composta por duas div, a primeira 'pai' que engloba tudo e as de dentro 'filhos'. </p>
+        <div class="conteiner">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <h3>Flex-direction</h3>
+        <p>
+            Na horizontal:
+            row  &rarr; as caixas são dispostas da esquerda para direita | row-reverse  &rarr; as caixas são adicionadas da direita para esquerda.
+        </p>
+        <p>
+            Na vertical: 
+            column  &rarr; itens são dispostos de cima para baixo | column-reverse  &rarr; itens são empilhado de baixo para cima
+        </p>
+        <h3>Eixos (axis)</h3>
+        <p>
+            Main-axis &rarr; eixo principal, definido pelo flex-direction e 
+            Cross-axis &rarr; eixo transversal ao main-axis.
+        </p>
+        <div class="container-tabela">
+            <table id="eixos">
+                <tr>
+                    <td>Flex-direction /Axis</td>
+                    <td>row</td>
+                    <td>row-reverse</td>
+                    <td>column</td>
+                    <td>column-reverse</td>
+                </tr>
+                <tr class="linha">
+                    <td>main-axis</td>
+                    <td>horizontal (esquerda &rarr; direita)</td>
+                    <td>horizontal (direita  &rarr; esquerda) </td>
+                    <td>vertical (cima  &rarr; baixo)</td>
+                    <td>vertical (baixo  &rarr; cima)</td>
+                </tr>
+                <tr>
+                    <td>cross-axis</td>
+                    <td>vertical (cima &rarr; baixo)</td>
+                    <td>vertical (cima  &rarr; baixo)</td>
+                    <td>horizontal (esquerda  &rarr; direita)</td>
+                    <td>horizontal (esquerda  &rarr; direita)</td>
+                </tr>
+            
+            </table>
+        </div>
+        <p>
+            Esses conceitos são importantes para entender propriedades como justify-content (alinha no main-axis) e align-items (alinha no cross-axis).
+        </p>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
